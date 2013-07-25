@@ -1,10 +1,10 @@
 # RESTful Agent
 
-This is a simple Composer package for accessing RESTful resources using Curl. Enjoy!
+This is a simple [Composer](http://getcomposer.org/) package for accessing RESTful resources using Curl. Enjoy!
 
 ## Installation
 
-The easiest way is to install it as any [Composer](http://getcomposer.org/) package. Just add an entry to your `composer.json` file requiring the latest available version:
+The easiest way is to install it as any [Composer](http://getcomposer.org/) package. Just add an entry to your [composer.json](http://getcomposer.org/doc/01-basic-usage.md#composer-json-project-setup) file requiring the latest available version:
 
     ...
     "require": {
