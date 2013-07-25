@@ -1,6 +1,6 @@
-# RESTful Agent Library
+# RESTful Agent
 
-This is a simple library for accessing RESTful resources using Curl. Enjoy!
+This is a simple Composer package for accessing RESTful resources using Curl. Enjoy!
 
 ## Installation
 
@@ -61,7 +61,7 @@ The library expects that the RESTful resource will use HTTP response codes to ac
 Knowing the above, just take into consideration the response code to act on the correct status of the resource. For example:
 
     $response = $agent->get('http://www.example.com/resources/54');
-    $result = $result->body;
+    $result = $response->body;
     switch ($response->code) {
       case 200:
         return $result;
@@ -83,7 +83,6 @@ As expected, the return value of all the methods is the output of the resource t
 
 But please not that, on library failure, an Exception will be thrown. So it's advisable to use it inside a try/catch block, like so:
 
-    $agent = new Restful\Agent;
     try {
       $agent->delete('http://www.example.com/resource/37');
     }
