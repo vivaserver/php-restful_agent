@@ -17,7 +17,7 @@ The package will be automatically installed when you execute the `composer insta
 
 ## Usage
 
-Create a new instance of the RESTful Agent after requiring the Composer autoloader ans you should be ready to go.
+Create a new instance of the RESTful Agent after requiring the Composer autoloader and you should be ready to go.
 
     require 'vendor/autoload.php';
     $agent = new Resftful\Agent;
@@ -89,5 +89,11 @@ But please not that, on library failure, an Exception will be thrown. So it's ad
     catch (Exception $e) {
       error_log($e->getMessage());
     }
+
+## License
+
+This software is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+
+## Copyright
 
 &copy;2013 [Cristian R. Arroyo](mailto:cristian.arroyo@vivaserver.com)
